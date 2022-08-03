@@ -7,7 +7,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
     <List>
       {options.map(option => (
         <li key={option}>
-          <Button type="button" onClick={() => onLeaveFeedback(option)}>
+          <Button type="button" onClick={onLeaveFeedback} name={option}>
             {option}
           </Button>
         </li>
